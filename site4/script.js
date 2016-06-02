@@ -36,6 +36,7 @@ WARNING!!! WARNING!!!
 (function () {
 
 var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+//console.log(names[1]);
 
 // STEP 10: (NOTHING TO DO. ALREADY DONE FOR YOU)
 // Loop over the names array and say either 'Hello' or "Good Bye"
@@ -43,6 +44,7 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
 // 'speak' method.
 // See Lecture 50, part 1
 for (var i = 0; i < names.length; i++) {
+	//console.log(names[i]);
 
   // STEP 11: (NOTHING TO DO. ALREADY DONE FOR YOU)
   // Retrieve the first letter of the current name in the loop.
@@ -59,9 +61,11 @@ for (var i = 0; i < names.length; i++) {
   // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
   // name in the loop.
   if (firstLetter === 'j') {
-    byeSpeaker.speak(names[i]);
+  	console.log("Good Bye" + " " + names[i])
+    //byeSpeaker.speak(names[i]);
   } else {
-    helloSpeaker.speak(names[i]);
+  	console.log("Hello" + " " + names[i])
+    //helloSpeaker.speak(names[i]);
   }
 }
 
